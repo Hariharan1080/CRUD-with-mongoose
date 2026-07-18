@@ -3,7 +3,6 @@ const mongoose = require ('mongoose');
 const createStud = async (data)=>{
     try{
     const cResult = await studmodels.create(data);
-    console.log(cResult, 'atrepo')
     return cResult;
     }catch(error){
         console.log(error);

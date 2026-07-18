@@ -3,7 +3,6 @@ const studRepo = require('../repository/studRepository.js');
 const studCreate = async (data)=>{
     try {
         const c_result = await studRepo.createStud(data);
-        console.log(c_result, "atservice")
     return c_result; 
     } catch (error) {
         console.log(error);

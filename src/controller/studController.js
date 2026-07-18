@@ -4,7 +4,6 @@ const create = async  (req,res)=>{
     
     try{
         const payload = req.body;
-        console.log(payload);
 
         const result = await studService.studCreate(payload);
 console.log(result, 'at contorller')
